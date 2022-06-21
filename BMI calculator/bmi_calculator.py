@@ -35,6 +35,9 @@ def imperial():
     height=float(input("Please enter your height\n"))
     BMI_imperial=(weight/(height*height))*703
     print(name+ ", your BMI in metric system is : " + str(BMI_imperial))
+
+
+#------------------MAIN----------------------------
 print("\nWelcome to BMI calculator.")
 print("\nA simple way to calculate if you have to go to gym or not.")
 sleep(2)
