@@ -9,7 +9,7 @@ def menu():
     print("1.Metric")
     print("2.Imperial")
     print("3.Quotes")
-    print("Quit")
+    print("4.Quit")
 #define function to calculate BMI in metric system
 def metric():
     weight=float(input("Please enter your weight in kg\n"))
@@ -18,15 +18,15 @@ def metric():
     print("your BMI in metric system is : " + str(BMI_metric))
     if(BMI_metric>0):
         if(BMI_metric<=16):
-            print("You are very underweight")
+            print(f"{name},you are very underweight")
         elif(BMI_metric<=18.5):
             print("You are underweight")
         elif(BMI_metric<=25):
-            print("Congrats! You are Healthy")
+            print(f"Congrats,{name}! You are Healthy")
         elif(BMI_metric<=30):
-            print("You are overweight")
+            print(f"{name},you are overweight")
         else: 
-            print("You are very overweight/obese")
+            print(f"{name},you are very overweight/obese")
     else:
         print("impossible!!!!")
 #define function to calculate BMI in imperial system
@@ -35,6 +35,19 @@ def imperial():
     height=float(input("Please enter your height\n"))
     BMI_imperial=(weight/(height*height))*703
     print(name+ ", your BMI in metric system is : " + str(BMI_imperial))
+        if(BMI_imperial>0):
+            if(BMI_imperial<=16):
+            print(f"{name},you are very underweight")
+        elif(BMI_imperial<=18.5):
+            print("You are underweight")
+        elif(BMI_imperial<=25):
+            print(f"Congrats,{name}! You are Healthy")
+        elif(BMI_imperial<=30):
+            print(f"{name},you are overweight")
+        else: 
+            print(f"{name},you are very overweight/obese")
+    else:
+        print("impossible!!!!")
 
 
 #------------------MAIN----------------------------
