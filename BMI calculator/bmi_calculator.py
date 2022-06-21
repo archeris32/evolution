@@ -12,8 +12,8 @@ def menu():
     print("4.Quit")
 #define function to calculate BMI in metric system
 def metric():
-    weight=float(input("Please enter your weight in kg\n"))
-    height=float(input("Please enter your height in meters\n"))
+    weight=float(input("Please enter your weight in kg: "))
+    height=float(input("Please enter your height in meters: "))
     BMI_metric=weight/(height*height)
     print("your BMI in metric system is : " + str(BMI_metric))
     if(BMI_metric>0):
@@ -31,12 +31,12 @@ def metric():
         print("impossible!!!!")
 #define function to calculate BMI in imperial system
 def imperial():
-    weight=int(input("Please enter your weight\n"))
-    height=float(input("Please enter your height\n"))
+    weight=int(input("Please enter your weight: "))
+    height=float(input("Please enter your height: "))
     BMI_imperial=(weight/(height*height))*703
     print(name+ ", your BMI in metric system is : " + str(BMI_imperial))
-        if(BMI_imperial>0):
-            if(BMI_imperial<=16):
+    if(BMI_imperial>0):
+        if(BMI_imperial<=16):
             print(f"{name},you are very underweight")
         elif(BMI_imperial<=18.5):
             print("You are underweight")
@@ -58,7 +58,7 @@ os.system('cls')
 print("Please enter your name bellow: \n")
 name= input()
 menu()
-choice=input()
+choice=input("Your choice: ")
 while True:
     if choice == '1':
         metric()
